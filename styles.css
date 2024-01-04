@@ -1,0 +1,286 @@
+:root{
+    --container-width: 650px;
+    --project-description-width: 55%;
+    --btn-height: 2.4rem;
+    --responsive-space: 2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: .9rem;
+}
+
+.container{
+    position: relative;
+    width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    background-color: #ffffffac;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--container-width);
+    font-size: 1.1rem;
+    z-index: 1;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav img{
+    height: 100%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+}
+
+.user-profile{
+    width: 70%;
+    float: left;
+    padding-right: 1rem;
+}
+
+.user-title{
+    font-size: 2.8rem;
+}
+
+.user-subtitle{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.user-description{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.user-photo{
+    width: 30%;
+    border-radius: 3rem;
+    /*center image vertically*/
+}
+
+.user-btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.user-btns img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.angle{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2rem;
+    width: 2rem;
+}
+
+section{
+    margin-bottom: 2rem;
+}
+
+section h2{
+    padding-bottom: 1rem;
+}
+
+.project-box{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.project-textbox{
+    width: var(--project-description-width);
+    padding-right: 1rem;
+}
+
+.project-textbox h3{
+    padding-bottom: 1rem;
+}
+
+.project-textbox p{
+    padding-bottom: 1rem;
+}
+
+.project-technologies{
+    padding-bottom: 1rem;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.project-technologies img{
+    border: black 1px solid;
+    border-radius: 5rem;
+    display: inline-block;
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+.project-links{
+    display: flex;
+    gap: .5rem;
+}
+
+.project-img{
+    width: calc(100% - var(--project-description-width));
+}
+
+.project-img img{
+    border-radius: .5rem;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.btn{
+    border: black 1px solid;
+    border-radius: .5rem;
+    padding: 0 .8rem;
+    height: var(--btn-height);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.btn img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.skills-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skills-imgs img{
+    display: block;
+    margin: auto;
+    height: 3rem;
+    width: 3rem;
+}
+
+.skills-imgs p{
+    text-align: center;
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contact-form input{
+    flex-grow: 1;
+    height: var(--btn-height);
+    border-radius: .5rem;
+    resize: none;
+    padding: 0 .5rem;
+}
+
+@media screen and (max-width: 720px){
+    .container{
+        position: relative;
+        width: 100%;
+        padding-left: var(--responsive-space);
+        padding-right: var(--responsive-space);
+    }
+
+    .nav{
+        background-color: white;
+        position: fixed;
+        top: 0;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - var(--responsive-space) * 2);
+        font-size: 1.1rem;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 620px){
+
+    .header-content{
+        display: block;
+    }
+
+    .user-profile{
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+
+    .user-photo{
+        display: none;
+    }
+
+    /*
+    .user-photo{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    */
+
+    .project-box{
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .project-textbox{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .project-technologies, .project-links{
+        justify-content: center;
+    }
+
+    .project-links{
+        padding-bottom: 1rem;
+    }
+
+    .project-img{
+        width: 100%;
+    }
+}
