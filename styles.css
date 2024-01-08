@@ -44,6 +44,11 @@ p{
     z-index: 1;
 }
 
+.nav p{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .nav ul{
     list-style-type: none;
     display: flex;
@@ -106,6 +111,7 @@ p{
     transform: translateX(-50%);
     height: 2rem;
     width: 2rem;
+    cursor: pointer;
 }
 
 section{
@@ -142,7 +148,6 @@ section h2{
 }
 
 .project-technologies img{
-    border: black 1px solid;
     border-radius: 5rem;
     display: inline-block;
     height: 2.3rem;
@@ -174,6 +179,7 @@ section h2{
     display: flex;
     align-items: center;
     gap: .5rem;
+    cursor: pointer;
 }
 
 .btn img{

@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="./styles.css" />
+        <!--add favicon-->
+        <link rel="icon" href="assets/favicon-16x16.png" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,27 +19,29 @@
     </head>
     <body>
         <header class="header container">
-            <nav class="nav">
-                <a href="#">Noe Jara</a>
+            <nav class="nav" id="nav">
+                <p id="title" href="#">Noe Jara</p>
                 <ul>
                     <li>
-                        <a href="#">
+                        <i href="#">
                             <img
                                 src="assets/icons/theme.svg"
                                 alt="icon-theme"
                             />
-                        </a>
+                        </i>
                     </li>
                     <li>
-                        <a href="#">leng</a>
+                        <p id="lang-btn" href="#">eng</p>
                     </li>
                 </ul>
             </nav>
             <div class="header-content">
                 <div class="user-profile">
-                    <h1 class="user-title">Hi, I'm Noe Jara</h1>
-                    <p class="user-subtitle">Back-end Web Developer</p>
-                    <p class="user-description">
+                    <h1 id="user-title" class="user-title">Hi, I'm Noe Jara</h1>
+                    <p id="user-subtitle" class="user-subtitle">
+                        Full-Stack Developer
+                    </p>
+                    <p id="user-description" class="user-description">
                         A telecommunications engineering student at PUCP with
                         interest and skills in web development.
                     </p>
@@ -55,9 +60,14 @@
                         /></a>
                     </div>
                 </div>
-                <img class="user-photo" src="assets/images/profile.jpg" alt="image-portfolio" />
+                <img
+                    class="user-photo"
+                    src="assets/images/profile.jpg"
+                    alt="image-portfolio"
+                />
             </div>
             <img
+                id="angle"
                 class="angle"
                 src="assets/icons/angle-down.svg"
                 alt="angle-down"
@@ -101,6 +111,7 @@
                         </ul>
                         <div class="project-links">
                             <a
+                                data-type="code"
                                 target="_blank"
                                 href="https://github.com/smavend/ProyectoGTICS-Grupo2.git"
                                 class="btn"
@@ -111,7 +122,7 @@
                                 />
                             </a>
                             <!--
-                            <a href="#" class="btn"
+                            <a data-type="live" href="#" class="btn"
                                 >Live
                                 <img
                                     src="assets/icons/link-solid.svg"
@@ -122,7 +133,10 @@
                         </div>
                     </div>
                     <div class="project-img">
-                        <img src="assets/images/gtics-project.png" alt="Project image" />
+                        <img
+                            src="assets/images/gtics-project.png"
+                            alt="Project image"
+                        />
                     </div>
                 </div>
                 <div class="project-box">
@@ -133,7 +147,7 @@
                         </h3>
                         <p>
                             Report incidents that occur on the PUCP campus so
-                            that they can be resolved
+                            that they can be resolved.
                         </p>
                         <ul class="project-technologies">
                             <li>
@@ -156,7 +170,11 @@
                             </li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://github.com/william24jes/Proyecto-nube.git" class="btn"
+                            <a
+                                data-type="code"
+                                target="_blank"
+                                href="https://github.com/william24jes/Proyecto-nube.git"
+                                class="btn"
                                 >Code
                                 <img
                                     src="assets/icons/github.svg"
@@ -165,6 +183,7 @@
                             </a>
                             <!--
                             <a
+                                data-type="live"
                                 target="_blank"
                                 href="#"
                                 class="btn"
@@ -178,7 +197,10 @@
                         </div>
                     </div>
                     <div class="project-img">
-                        <img src="assets/images/iweb-project.png" alt="Project image" />
+                        <img
+                            src="assets/images/iweb-project.png"
+                            alt="Project image"
+                        />
                     </div>
                 </div>
                 <div class="project-box">
@@ -207,6 +229,7 @@
                         </ul>
                         <div class="project-links">
                             <a
+                                data-type="code"
                                 target="_blank"
                                 href="https://github.com/noaJ4Q/analize-and-generate-images-with-Azure-AI.git"
                                 class="btn"
@@ -216,7 +239,11 @@
                                     alt="icon-github"
                                 />
                             </a>
-                            <a href="#" class="btn"
+                            <a
+                                data-type="live"
+                                target="_blank"
+                                href="https://calm-mud-053b23303.4.azurestaticapps.net/"
+                                class="btn"
                                 >Live
                                 <img
                                     src="assets/icons/link-solid.svg"
@@ -226,7 +253,10 @@
                         </div>
                     </div>
                     <div class="project-img">
-                        <img src="assets/images/azure-project.png" alt="Project image" />
+                        <img
+                            src="assets/images/azure-project.png"
+                            alt="Project image"
+                        />
                     </div>
                 </div>
             </section>
@@ -250,7 +280,10 @@
                         <p>MySQL</p>
                     </div>
                     <div>
-                        <img src="assets/logos/javascript.svg" alt="Javascript"/>
+                        <img
+                            src="assets/logos/javascript.svg"
+                            alt="Javascript"
+                        />
                         <p>JavaScript</p>
                     </div>
                     <div>
@@ -285,18 +318,21 @@
 
             <section class="contact container">
                 <h2>Contact</h2>
-                <form action="#" class="contact-form">
+                <form class="contact-form">
                     <label for="message">Email message</label>
-                    <input name="message" id="message" />
-                    <button class="btn" type="submit">
+                    <input name="message" id="message" required/>
+                    <p data-type="send" id="send-btn" class="btn">
                         Send
                         <img
                             src="assets/icons/paper-plane.svg"
                             alt="paper-plane"
                         />
-                    </button>
+                    </p>
                 </form>
             </section>
         </main>
     </body>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="./app.js"></script>
 </html>
