@@ -68,7 +68,7 @@ const data = {
             send: 'Enviar'
         },
         contact: {
-            message: 'Correo electrónico'
+            message: 'Mensaje de correo'
         }
     }
 }
