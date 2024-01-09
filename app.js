@@ -20,6 +20,10 @@ const data = {
             {
                 title: 'Analize and generate images with Azure AI',
                 description: 'Analyze images using its URL or generate new ones based on text.'
+            },
+            {
+                title: 'To-Do List app',
+                description: 'Organize your work and life through this simple to do list app.'
             }
         ],
         buttons: {
@@ -52,6 +56,10 @@ const data = {
             {
                 title: 'Analize and generate images with Azure AI',
                 description: 'Analiza imágenes usando su URL o genera nuevas basadas en texto.'
+            },
+            {
+                title: 'Aplicación de lista de tareas',
+                description: 'Organiza tu trabajo y vida a través de esta simple aplicación de lista de tareas.'
             }
         ],
         buttons: {
@@ -198,7 +206,7 @@ cvIcon.onclick = () => {
     //download pdf file
     const link = document.createElement('a');
     link.href = './assets/files/CV.pdf';
-    link.download = 'CV.pdf';
+    link.download = 'CV_Noe_Jara.pdf';
     link.click();
 
 }
