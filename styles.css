@@ -99,6 +99,10 @@ p{
     gap: 1rem;
 }
 
+.user-btns > *{
+    cursor: pointer;
+}
+
 .user-btns img{
     height: 2rem;
     width: 2rem;
