@@ -18,6 +18,10 @@ const data = {
                 description: 'Reporting and solution system for incidents that occur on the PUCP campus.'
             },
             {
+                title: 'Authentication web system with Spring Boot and MySQL',
+                description: 'Web system that allows the registration and authentication of users.'
+            },
+            {
                 title: 'Analize and generate images with Azure AI',
                 description: 'Analyze images using its URL or generate new ones based on text.'
             },
@@ -52,6 +56,10 @@ const data = {
             {
                 title: 'Registro y monitoreo de incidentes en el campus PUCP',
                 description: 'Sistema de reporte y solución de incidentes ocurridos en el campus PUCP.'
+            },
+            {
+                title: 'Sistema web de autenticación con Spring Boot y MySQL',
+                description: 'Sistema web que permite el registro y autenticación de usuarios.'
             },
             {
                 title: 'Analize and generate images with Azure AI',

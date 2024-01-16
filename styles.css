@@ -3,6 +3,8 @@
     --project-description-width: 55%;
     --btn-height: 2.4rem;
     --responsive-space: 2rem;
+    --main-color: #1f2a3a;
+    --text-color: white;
 }
 
 *{
@@ -11,6 +13,10 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--main-color);
 }
 
 p{
@@ -31,8 +37,9 @@ p{
 }
 
 .nav{
-    background-color: #ffffffac;
+    background-color: #1f2a3aAC;
     backdrop-filter: blur(10px);
+    color: var(--text-color);
     position: fixed;
     top: 0;
     padding: 1rem 0;
@@ -72,6 +79,7 @@ p{
     width: 70%;
     float: left;
     padding-right: 1rem;
+    color: var(--text-color);
 }
 
 .user-title{
@@ -123,10 +131,12 @@ section{
 }
 
 section h2{
+    color: var(--text-color);
     padding-bottom: 1rem;
 }
 
 .project-box{
+    color: var(--text-color);
     display: flex;
     margin-bottom: 3rem;
 }
@@ -176,14 +186,16 @@ section h2{
 }
 
 .btn{
-    border: black 1px solid;
+    background-color: #0f192c;
     border-radius: .5rem;
+    color: var(--text-color);
     padding: 0 .8rem;
     height: var(--btn-height);
     display: flex;
     align-items: center;
     gap: .5rem;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .btn img{
@@ -191,6 +203,10 @@ section h2{
     vertical-align: middle;
     height: 1.2rem;
     width: 1.2rem;
+}
+
+.btn:hover{
+    transform: scale(1.05);
 }
 
 .skills-imgs{
@@ -208,10 +224,12 @@ section h2{
 }
 
 .skills-imgs p{
+    color: var(--text-color);
     text-align: center;
 }
 
 .contact-form{
+    color: var(--text-color);
     display: flex;
     align-items: center;
     gap: .5rem;
