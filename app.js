@@ -76,7 +76,7 @@ const data = {
             send: 'Enviar'
         },
         contact: {
-            message: 'Mensaje de correo'
+            message: 'Mensaje'
         }
     }
 }
@@ -101,6 +101,16 @@ const cvIcon = document.getElementById('icon-cv');
 const EMAILJS_PUBLIC_KEY = '-6yTx2-ebqM2Fca8_';
 const EMAILJS_SERVICE_ID = 'service_45f0qsv';
 const EMAILJS_TEMPLATE_ID = 'template_w4w12zk';
+
+// css configuration
+const tooltips = document.querySelectorAll('.tooltip-text');
+tooltips.forEach((tooltip) => {
+    const iconWidth = tooltip.previousElementSibling.offsetWidth;
+    const tooltipWidth = tooltip.offsetWidth;
+    const shift = (iconWidth - tooltipWidth) / 2;
+    tooltip.style.left = shift + 'px';
+
+});
 
 // initialize emailjs
 (function(){

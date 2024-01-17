@@ -4,7 +4,9 @@
     --btn-height: 2.4rem;
     --responsive-space: 2rem;
     --main-color: #1f2a3a;
-    --text-color: white;
+    --text-color-main: white;
+    --text-color-sec: rgb(211, 211, 211);
+    --btn-color: #0f192c;
 }
 
 *{
@@ -39,7 +41,7 @@ p{
 .nav{
     background-color: #1f2a3aAC;
     backdrop-filter: blur(10px);
-    color: var(--text-color);
+    color: var(--text-color-main);
     position: fixed;
     top: 0;
     padding: 1rem 0;
@@ -79,7 +81,7 @@ p{
     width: 70%;
     float: left;
     padding-right: 1rem;
-    color: var(--text-color);
+    color: var(--text-color-main);
 }
 
 .user-title{
@@ -94,26 +96,47 @@ p{
 .user-description{
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    color: var(--text-color-sec);
 }
 
 .user-photo{
     width: 30%;
     border-radius: 3rem;
-    /*center image vertically*/
 }
 
-.user-btns{
+.user-links{
     display: flex;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
-.user-btns > *{
+.user-links #icon-cv{
     cursor: pointer;
+    display: inline-block;
 }
 
-.user-btns img{
+.user-links img{
     height: 2rem;
     width: 2rem;
+}
+
+.user-link{
+    position: relative;
+}
+
+.tooltip-text{
+    background-color: var(--btn-color);
+    border-radius: .5rem;
+    color: var(--text-color-main);
+    cursor: context-menu;
+    padding: .2rem .4rem;
+    position: absolute;
+    top: 110%;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.user-link:hover .tooltip-text{
+    opacity: 1;
 }
 
 .angle{
@@ -131,12 +154,12 @@ section{
 }
 
 section h2{
-    color: var(--text-color);
+    color: var(--text-color-main);
     padding-bottom: 1rem;
 }
 
 .project-box{
-    color: var(--text-color);
+    color: var(--text-color-main);
     display: flex;
     margin-bottom: 3rem;
 }
@@ -152,6 +175,7 @@ section h2{
 
 .project-textbox p{
     padding-bottom: 1rem;
+    color: var(--text-color-sec);
 }
 
 .project-technologies{
@@ -186,9 +210,9 @@ section h2{
 }
 
 .btn{
-    background-color: #0f192c;
+    background-color: var(--btn-color);
     border-radius: .5rem;
-    color: var(--text-color);
+    color: var(--text-color-main);
     padding: 0 .8rem;
     height: var(--btn-height);
     display: flex;
@@ -224,12 +248,12 @@ section h2{
 }
 
 .skills-imgs p{
-    color: var(--text-color);
+    color: var(--text-color-sec);
     text-align: center;
 }
 
 .contact-form{
-    color: var(--text-color);
+    color: var(--text-color-sec);
     display: flex;
     align-items: center;
     gap: .5rem;
