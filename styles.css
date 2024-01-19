@@ -94,7 +94,7 @@ p{
 }
 
 .user-description{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     color: var(--text-color-sec);
 }
@@ -276,7 +276,7 @@ section h2{
     }
 
     .nav{
-        background-color: white;
+        background-color: #1f2a3aAC;
         position: fixed;
         top: 0;
         padding: 1rem 0;
