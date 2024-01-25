@@ -267,6 +267,15 @@ section h2{
     padding: 0 .5rem;
 }
 
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
 @media screen and (max-width: 720px){
     .container{
         position: relative;
