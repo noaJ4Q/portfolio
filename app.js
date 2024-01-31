@@ -95,7 +95,6 @@ const title = document.getElementById('title');
 const angle = document.getElementById('angle');
 const langBtn = document.getElementById('lang-btn');
 const sendBtn = document.getElementById('send-btn');
-const cvIcon = document.getElementById('icon-cv');
 
 // emailjs constants
 const EMAILJS_PUBLIC_KEY = '-6yTx2-ebqM2Fca8_';
@@ -231,13 +230,4 @@ sendBtn.onclick = () => {
         alert('Message could not be sent. Please try again later.');
         console.log('FAILED...', error);
     });
-}
-
-cvIcon.onclick = () => {
-    //download pdf file
-    const link = document.createElement('a');
-    link.href = './assets/files/CV.pdf';
-    link.download = 'CV_Noe_Jara.pdf';
-    link.click();
-
 }
