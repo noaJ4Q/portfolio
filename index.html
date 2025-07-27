@@ -1,145 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="./styles.css" />
-        <!--add favicon-->
-        <link rel="icon" href="assets/favicon-16x16.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-            rel="stylesheet"
-        />
+  <link rel="stylesheet" href="./styles.css" />
+  <!--add favicon-->
+  <link rel="icon" href="assets/favicon-16x16.png" />
 
-        <title>Noe Jara's Portfolio</title>
-    </head>
-    <body>
-        <header class="header container">
-            <nav class="nav" id="nav">
-                <p id="title" href="#">Noe Jara</p>
-                <ul>
-                    <!--
-                    <li>
-                        <i href="#">
-                            <img
-                                src="assets/icons/theme.svg"
-                                alt="icon-theme"
-                            />
-                        </i>
-                    </li>
-                    -->
-                    <li>
-                        <p id="lang-btn" href="#">eng</p>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-content hidden">
-                <div class="user-profile">
-                    <h1 id="user-title" class="user-title">Hi, I'm Noe Jara</h1>
-                    <p id="user-subtitle" class="user-subtitle">
-                        Full-Stack Developer
-                    </p>
-                    <p id="user-description" class="user-description">
-                        A telecommunications engineering student at PUCP with
-                        interest and skills in web development.
-                    </p>
-                    <div class="user-links">
-                        <div class="user-link">
-                            <a
-                                target="_blank"
-                                href="https://www.linkedin.com/in/noe-jara"
-                                ><img
-                                    src="assets/icons/linkedin.svg"
-                                    alt="icon-linkedin"
-                                />
-                            </a>
-                            <span class="tooltip-text">LinkedIn</span>
-                        </div>
-                        <div class="user-link">
-                            <a
-                                target="_blank"
-                                href="https://github.com/noaJ4Q"
-                                ><img
-                                    src="assets/icons/github.svg"
-                                    alt="icon-github"
-                                />
-                            </a>
-                            <span class="tooltip-text">GitHub</span>
-                        </div>
-                        <div class="user-link">
-                            <a download="CV_Noe_Jara.pdf" href="./assets/files/CV.pdf" id="icon-cv">
-                                <img src="assets/icons/cv.svg" alt="icon-cv" />
-                            </a>
-                            <span class="tooltip-text">CV</span>
-                        </div>
-                    </div>
-                </div>
-                <img
-                    class="user-photo"
-                    src="assets/images/profile.jpg"
-                    alt="image-portfolio"
-                />
-            </div>
-            <img
-                id="angle"
-                class="angle"
-                src="assets/icons/angle-down.svg"
-                alt="angle-down"
-            />
-        </header>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-        <main>
-            <section class="projects container ">
-                <h2>Projects</h2>
-                <div class="project-box hidden">
-                    <div class="project-textbox">
-                        <h3>
-                            Registration and administration of clinic locations
-                        </h3>
-                        <p>
-                            Clinic system for appointment scheduling and
-                            managment of clients, doctors and administrators.
-                        </p>
-                        <ul class="project-technologies">
-                            <li>
-                                <img
-                                    src="assets/logos/spring-boot.svg"
-                                    alt="spring-boot"
-                                />
-                            </li>
-                            <li>
-                                <img src="assets/logos/mysql.svg" alt="mysql" />
-                            </li>
-                            <li>
-                                <img
-                                    src="assets/logos/bootstrap.svg"
-                                    alt="bootstrap"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="assets/logos/google-cloud.svg"
-                                    alt="google-cloud"
-                                />
-                            </li>
-                        </ul>
-                        <div class="project-links">
-                            <a
-                                data-type="code"
-                                target="_blank"
-                                href="https://github.com/smavend/ProyectoGTICS-Grupo2.git"
-                                class="btn"
-                                >Code
-                                <img
-                                    src="assets/icons/github.svg"
-                                    alt="icon-github"
-                                />
-                            </a>
-                            <!--
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="header container">
+
+    <nav class="nav" id="nav">
+      <p id="title" href="#">Portfolio</p>
+      <ul>
+        <li>
+          <i href="#">
+            <img src="assets/icons/theme.svg" alt="icon-theme" />
+          </i>
+        </li>
+        <li>
+          <p id="lang-btn" href="#">eng</p>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-content hidden">
+      <div class="user-profile">
+        <h1 id="user-title" class="user-title">Hi, I'm Noe Jara</h1>
+        <p id="user-subtitle" class="user-subtitle">
+          Full-Stack Developer
+        </p>
+        <p id="user-description" class="user-description">
+          Student passionate about software development.
+        </p>
+        <div class="user-links">
+          <div class="user-link">
+            <a target="_blank" href="https://www.linkedin.com/in/noe-jara"><img src="assets/icons/linkedin.svg"
+                alt="icon-linkedin" />
+            </a>
+            <span class="tooltip-text">LinkedIn</span>
+          </div>
+          <div class="user-link">
+            <a target="_blank" href="https://github.com/noaJ4Q"><img src="assets/icons/github.svg" alt="icon-github" />
+            </a>
+            <span class="tooltip-text">GitHub</span>
+          </div>
+          <div class="user-link">
+            <a download="CV_Noe_Jara.pdf" href="./assets/files/CV.pdf" id="icon-cv">
+              <img src="assets/icons/cv.svg" alt="icon-cv" />
+            </a>
+            <span class="tooltip-text">Resume</span>
+          </div>
+        </div>
+      </div>
+      <img class="user-photo" src="assets/images/profile.jpg" alt="image-portfolio" />
+    </div>
+    <img id="angle" class="angle" src="assets/icons/angle-down.svg" alt="angle-down" />
+  </header>
+
+  <main>
+
+    <section class="experience container">
+      <h2>Experience</h2>
+      <div class="experience-box">
+        <h3>Job Title</h3>
+        <p>Company Name - Location</p>
+        <ul class="experience-description">
+          <li><span>Brief description of the job responsibilities and achievements.</span></li>
+          <li><span>Brief description of the job responsibilities and achievements.</span></li>
+          <li><span>Brief description of the job responsibilities and achievements.</span></li>
+        </ul>
+      </div>
+      <div class="experience-box">
+        <h3>Job Title</h3>
+        <p>Company Name - Location</p>
+        <ul class="experience-description">
+          <li><span>Brief description of the job responsibilities and achievements.</span></li>
+          <li><span>Brief description of the job responsibilities and achievements.</span></li>
+          <li><span>Brief description of the job responsibilities and achievements.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects container">
+
+      <h2>Projects</h2>
+
+      <div class="project-box hidden">
+        <div class="project-textbox">
+          <h3>
+            Registration and administration of clinic locations
+          </h3>
+          <p>
+            Clinic system for appointment scheduling and
+            managment of clients, doctors and administrators.
+          </p>
+          <ul class="project-technologies">
+            <li>
+              <img src="assets/logos/spring-boot.svg" alt="spring-boot" />
+            </li>
+            <li>
+              <img src="assets/logos/mysql.svg" alt="mysql" />
+            </li>
+            <li>
+              <img src="assets/logos/bootstrap.svg" alt="bootstrap" />
+            </li>
+            <li>
+              <img src="assets/logos/google-cloud.svg" alt="google-cloud" />
+            </li>
+          </ul>
+          <div class="project-links">
+            <a data-type="code" target="_blank" href="https://github.com/smavend/ProyectoGTICS-Grupo2.git"
+              class="btn">Code
+              <img src="assets/icons/github.svg" alt="icon-github" />
+            </a>
+            <!--
                             <a data-type="live" href="#" class="btn"
                                 >Live
                                 <img
@@ -148,58 +133,43 @@
                                 />
                             </a>
                             -->
-                        </div>
-                    </div>
-                    <div class="project-img">
-                        <img
-                            src="assets/images/gtics-project.png"
-                            alt="Project image"
-                        />
-                    </div>
-                </div>
-                <div class="project-box hidden">
-                    <div class="project-textbox">
-                        <h3>
-                            Registration and monitoring of incidents on the PUCP
-                            campus
-                        </h3>
-                        <p>
-                            Report incidents that occur on the PUCP campus so
-                            that they can be resolved.
-                        </p>
-                        <ul class="project-technologies">
-                            <li>
-                                <img src="assets/logos/java.svg" alt="java" />
-                            </li>
-                            <li>
-                                <img src="assets/logos/mysql.svg" alt="mysql" />
-                            </li>
-                            <li>
-                                <img
-                                    src="assets/logos/bootstrap.svg"
-                                    alt="bootstrap"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="assets/logos/google-cloud.svg"
-                                    alt="google-cloud"
-                                />
-                            </li>
-                        </ul>
-                        <div class="project-links">
-                            <a
-                                data-type="code"
-                                target="_blank"
-                                href="https://github.com/william24jes/Proyecto-nube.git"
-                                class="btn"
-                                >Code
-                                <img
-                                    src="assets/icons/github.svg"
-                                    alt="icon-github"
-                                />
-                            </a>
-                            <!--
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="assets/images/gtics-project.png" alt="Project image" />
+        </div>
+      </div>
+
+      <div class="project-box hidden">
+        <div class="project-textbox">
+          <h3>
+            Registration and monitoring of incidents on the PUCP
+            campus
+          </h3>
+          <p>
+            Report incidents that occur on the PUCP campus so
+            that they can be resolved.
+          </p>
+          <ul class="project-technologies">
+            <li>
+              <img src="assets/logos/java.svg" alt="java" />
+            </li>
+            <li>
+              <img src="assets/logos/mysql.svg" alt="mysql" />
+            </li>
+            <li>
+              <img src="assets/logos/bootstrap.svg" alt="bootstrap" />
+            </li>
+            <li>
+              <img src="assets/logos/google-cloud.svg" alt="google-cloud" />
+            </li>
+          </ul>
+          <div class="project-links">
+            <a data-type="code" target="_blank" href="https://github.com/william24jes/Proyecto-nube.git"
+              class="btn">Code
+              <img src="assets/icons/github.svg" alt="icon-github" />
+            </a>
+            <!--
                             <a
                                 data-type="live"
                                 target="_blank"
@@ -212,253 +182,171 @@
                                 />
                             </a>
                             -->
-                        </div>
-                    </div>
-                    <div class="project-img">
-                        <img
-                            src="assets/images/iweb-project.png"
-                            alt="Project image"
-                        />
-                    </div>
-                </div>
-                <div class="project-box hidden">
-                    <div class="project-textbox">
-                        <h3>
-                            Authentication web system with Spring Boot and MySQL
-                        </h3>
-                        <p>
-                            Web system that allows the registration and
-                            authentication of users.
-                        </p>
-                        <ul class="project-technologies">
-                            <li>
-                                <img
-                                    src="assets/logos/spring-boot.svg"
-                                    alt="spring-boot"
-                                />
-                            </li>
-                            <li>
-                                <img src="assets/logos/mysql.svg" alt="mysql" />
-                            </li>
-                            <li>
-                                <img
-                                    src="assets/logos/bootstrap.svg"
-                                    alt="bootstrap"
-                                />
-                            </li>
-                        </ul>
-                        <div class="project-links">
-                            <a
-                                data-type="code"
-                                target="_blank"
-                                href="https://github.com/noaJ4Q/web-authentication-system.git"
-                                class="btn"
-                                >Code
-                                <img
-                                    src="assets/icons/github.svg"
-                                    alt="icon-github"
-                                />
-                            </a>
-                            <a
-                                data-type="live"
-                                target="_blank"
-                                href="http://noa-web.lat"
-                                class="btn"
-                                >Live
-                                <img
-                                    src="assets/icons/link-solid.svg"
-                                    alt="icon-link"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-img">
-                        <img
-                            src="assets/images/auth-project.png"
-                            alt="Project image"
-                        />
-                    </div>
-                </div>
-                <div class="project-box hidden">
-                    <div class="project-textbox">
-                        <h3>Analize and generate images with Azure AI</h3>
-                        <p>
-                            Analyze images using its URL or generate new ones
-                            based on text.
-                        </p>
-                        <ul class="project-technologies">
-                            <li>
-                                <img
-                                    src="assets/logos/node-js.svg"
-                                    alt="react"
-                                />
-                            </li>
-                            <li>
-                                <img
-                                    src="assets/logos/react-js.svg"
-                                    alt="nodejs"
-                                />
-                            </li>
-                            <li>
-                                <img src="assets/logos/azure.svg" alt="azure" />
-                            </li>
-                        </ul>
-                        <div class="project-links">
-                            <a
-                                data-type="code"
-                                target="_blank"
-                                href="https://github.com/noaJ4Q/analize-and-generate-images-with-Azure-AI.git"
-                                class="btn"
-                                >Code
-                                <img
-                                    src="assets/icons/github.svg"
-                                    alt="icon-github"
-                                />
-                            </a>
-                            <a
-                                data-type="live"
-                                target="_blank"
-                                href="https://calm-mud-053b23303.4.azurestaticapps.net/"
-                                class="btn"
-                                >Live
-                                <img
-                                    src="assets/icons/link-solid.svg"
-                                    alt="icon-link"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-img">
-                        <img
-                            src="assets/images/azure-project.png"
-                            alt="Project image"
-                        />
-                    </div>
-                </div>
-                <div class="project-box hidden">
-                    <div class="project-textbox">
-                        <h3>To-Do List app</h3>
-                        <p>
-                            Organize your work and life through this simple to
-                            do list app.
-                        </p>
-                        <ul class="project-technologies">
-                            <li>
-                                <img
-                                    src="assets/logos/node-js.svg"
-                                    alt="react"
-                                />
-                            </li>
-                        </ul>
-                        <div class="project-links">
-                            <a
-                                data-type="code"
-                                target="_blank"
-                                href="https://github.com/noaJ4Q/NodeJS-TodoList.git"
-                                class="btn"
-                                >Code
-                                <img
-                                    src="assets/icons/github.svg"
-                                    alt="icon-github"
-                                />
-                            </a>
-                            <a
-                                data-type="live"
-                                target="_blank"
-                                href="https://todolist-app-umkz.onrender.com"
-                                class="btn"
-                                >Live
-                                <img
-                                    src="assets/icons/link-solid.svg"
-                                    alt="icon-link"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-img">
-                        <img
-                            src="assets/images/to-do-list-app.png"
-                            alt="Project image"
-                        />
-                    </div>
-                </div>
-            </section>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="assets/images/iweb-project.png" alt="Project image" />
+        </div>
+      </div>
 
-            <section class="skills container hidden">
-                <h2>Skills</h2>
-                <div class="skills-imgs">
-                    <div>
-                        <img src="assets/logos/java.svg" alt="Java" />
-                        <p>Java</p>
-                    </div>
-                    <div>
-                        <img
-                            src="assets/logos/spring-boot.svg"
-                            alt="Spring boot"
-                        />
-                        <p>Spring Boot</p>
-                    </div>
-                    <div>
-                        <img src="assets/logos/mysql.svg" alt="MySQL" />
-                        <p>MySQL</p>
-                    </div>
-                    <div>
-                        <img
-                            src="assets/logos/javascript.svg"
-                            alt="Javascript"
-                        />
-                        <p>JavaScript</p>
-                    </div>
-                    <div>
-                        <img src="assets/logos/node-js.svg" alt="NodeJS" />
-                        <p>Node.js</p>
-                    </div>
-                    <div>
-                        <img src="assets/logos/git.svg" alt="Git" />
-                        <p>Git</p>
-                    </div>
-                    <div>
-                        <img src="assets/logos/github.svg" alt="GitHub" />
-                        <p>GitHub</p>
-                    </div>
-                    <div>
-                        <img src="assets/logos/azure.svg" alt="Azure" />
-                        <p>Azure</p>
-                    </div>
-                    <div>
-                        <img
-                            src="assets/logos/google-cloud.svg"
-                            alt="Google Cloud"
-                        />
-                        <p>GCP</p>
-                    </div>
-                    <div>
-                        <img src="assets/logos/firebase.svg" alt="Firebase" />
-                        <p>Firebase</p>
-                    </div>
-                </div>
-            </section>
+      <div class="project-box hidden">
+        <div class="project-textbox">
+          <h3>
+            Authentication web system with Spring Boot and MySQL
+          </h3>
+          <p>
+            Web system that allows the registration and
+            authentication of users.
+          </p>
+          <ul class="project-technologies">
+            <li>
+              <img src="assets/logos/spring-boot.svg" alt="spring-boot" />
+            </li>
+            <li>
+              <img src="assets/logos/mysql.svg" alt="mysql" />
+            </li>
+            <li>
+              <img src="assets/logos/bootstrap.svg" alt="bootstrap" />
+            </li>
+          </ul>
+          <div class="project-links">
+            <a data-type="code" target="_blank" href="https://github.com/noaJ4Q/web-authentication-system.git"
+              class="btn">Code
+              <img src="assets/icons/github.svg" alt="icon-github" />
+            </a>
+            <a data-type="live" target="_blank" href="http://noa-web.lat" class="btn">Live
+              <img src="assets/icons/link-solid.svg" alt="icon-link" />
+            </a>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="assets/images/auth-project.png" alt="Project image" />
+        </div>
+      </div>
 
-            <section class="contact container hidden">
-                <h2>Contact</h2>
-                <form class="contact-form">
-                    <label for="message">Email message</label>
-                    <input name="message" id="message" required />
-                    <p data-type="send" id="send-btn" class="btn">
-                        Send
-                        <img
-                            src="assets/icons/paper-plane.svg"
-                            alt="paper-plane"
-                        />
-                    </p>
-                </form>
-            </section>
-        </main>
-    </body>
+      <div class="project-box hidden">
+        <div class="project-textbox">
+          <h3>Analize and generate images with Azure AI</h3>
+          <p>
+            Analyze images using its URL or generate new ones
+            based on text.
+          </p>
+          <ul class="project-technologies">
+            <li>
+              <img src="assets/logos/node-js.svg" alt="react" />
+            </li>
+            <li>
+              <img src="assets/logos/react-js.svg" alt="nodejs" />
+            </li>
+            <li>
+              <img src="assets/logos/azure.svg" alt="azure" />
+            </li>
+          </ul>
+          <div class="project-links">
+            <a data-type="code" target="_blank"
+              href="https://github.com/noaJ4Q/analize-and-generate-images-with-Azure-AI.git" class="btn">Code
+              <img src="assets/icons/github.svg" alt="icon-github" />
+            </a>
+            <a data-type="live" target="_blank" href="https://calm-mud-053b23303.4.azurestaticapps.net/"
+              class="btn">Live
+              <img src="assets/icons/link-solid.svg" alt="icon-link" />
+            </a>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="assets/images/azure-project.png" alt="Project image" />
+        </div>
+      </div>
 
-    <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"
-    ></script>
-    <script src="./app.js"></script>
+      <div class="project-box hidden">
+        <div class="project-textbox">
+          <h3>To-Do List app</h3>
+          <p>
+            Organize your work and life through this simple to
+            do list app.
+          </p>
+          <ul class="project-technologies">
+            <li>
+              <img src="assets/logos/node-js.svg" alt="react" />
+            </li>
+          </ul>
+          <div class="project-links">
+            <a data-type="code" target="_blank" href="https://github.com/noaJ4Q/NodeJS-TodoList.git" class="btn">Code
+              <img src="assets/icons/github.svg" alt="icon-github" />
+            </a>
+            <a data-type="live" target="_blank" href="https://todolist-app-umkz.onrender.com" class="btn">Live
+              <img src="assets/icons/link-solid.svg" alt="icon-link" />
+            </a>
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="assets/images/to-do-list-app.png" alt="Project image" />
+        </div>
+      </div>
+
+    </section>
+
+    <section class="skills container hidden">
+      <h2>Skills</h2>
+      <div class="skills-imgs">
+        <div>
+          <img src="assets/logos/java.svg" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div>
+          <img src="assets/logos/spring-boot.svg" alt="Spring boot" />
+          <p>Spring Boot</p>
+        </div>
+        <div>
+          <img src="assets/logos/mysql.svg" alt="MySQL" />
+          <p>MySQL</p>
+        </div>
+        <div>
+          <img src="assets/logos/javascript.svg" alt="Javascript" />
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img src="assets/logos/node-js.svg" alt="NodeJS" />
+          <p>Node.js</p>
+        </div>
+        <div>
+          <img src="assets/logos/git.svg" alt="Git" />
+          <p>Git</p>
+        </div>
+        <div>
+          <img src="assets/logos/github.svg" alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+        <div>
+          <img src="assets/logos/azure.svg" alt="Azure" />
+          <p>Azure</p>
+        </div>
+        <div>
+          <img src="assets/logos/google-cloud.svg" alt="Google Cloud" />
+          <p>GCP</p>
+        </div>
+        <div>
+          <img src="assets/logos/firebase.svg" alt="Firebase" />
+          <p>Firebase</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container hidden">
+      <h2>Contact</h2>
+      <form class="contact-form">
+        <label for="message">Email message</label>
+        <input name="message" id="message" required />
+        <p data-type="send" id="send-btn" class="btn">
+          Send
+          <img src="assets/icons/paper-plane.svg" alt="paper-plane" />
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+<script src="./app.js"></script>
+
 </html>
