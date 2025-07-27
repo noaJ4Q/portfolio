@@ -18,21 +18,22 @@
 </head>
 
 <body>
-  <header class="header container">
 
-    <nav class="nav" id="nav">
-      <p id="title" href="#">Portfolio</p>
-      <ul>
-        <li>
-          <i href="#">
-            <img src="assets/icons/theme.svg" alt="icon-theme" />
-          </i>
-        </li>
-        <li>
-          <p id="lang-btn" href="#">eng</p>
-        </li>
-      </ul>
-    </nav>
+  <nav class="nav" id="nav">
+    <p id="title" href="#">Portfolio</p>
+    <ul>
+      <li>
+        <i href="#">
+          <img src="assets/icons/theme.svg" alt="icon-theme" />
+        </i>
+      </li>
+      <li>
+        <p id="lang-btn" href="#">eng</p>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="header container">
 
     <div class="header-content hidden">
       <div class="user-profile">
@@ -56,7 +57,7 @@
             <span class="tooltip-text">GitHub</span>
           </div>
           <div class="user-link">
-            <a download="CV_Noe_Jara.pdf" href="./assets/files/CV.pdf" id="icon-cv">
+            <a download="Resume_Noe_Jara.pdf" href="./assets/files/Resume Noe Jara.pdf" id="icon-cv">
               <img src="assets/icons/cv.svg" alt="icon-cv" />
             </a>
             <span class="tooltip-text">Resume</span>
@@ -72,24 +73,30 @@
 
     <section class="experience container">
       <h2>Experience</h2>
-      <div class="experience-box">
-        <h3>Job Title</h3>
-        <p>Company Name - Location</p>
+      <div class="experience-box hidden">
+        <h3>Development Intern - Bitel Peru</h3>
+        <p>May 2024 - Nov 2024</p>
         <ul class="experience-description">
-          <li><span>Brief description of the job responsibilities and achievements.</span></li>
-          <li><span>Brief description of the job responsibilities and achievements.</span></li>
-          <li><span>Brief description of the job responsibilities and achievements.</span></li>
+          <li><span>Developed functionalities on web platforms using Java, Apache Struts, and Hibernate, optimizing the
+              user experience.</span></li>
+          <li><span>Participated in meetings with the Sales team to identify and resolve bugs in multi-threaded Java
+              processes.</span></li>
+          <li><span>Maintained effective communication in English with an international team using Jira for task
+              monitoring.</span></li>
         </ul>
       </div>
-      <div class="experience-box">
-        <h3>Job Title</h3>
-        <p>Company Name - Location</p>
+
+      <div class="experience-box hidden">
+        <h3>Professor Assistant - PUCP</h3>
+        <p>Mar 2024 - Jul 2024</p>
         <ul class="experience-description">
-          <li><span>Brief description of the job responsibilities and achievements.</span></li>
-          <li><span>Brief description of the job responsibilities and achievements.</span></li>
-          <li><span>Brief description of the job responsibilities and achievements.</span></li>
+          <li><span>Prepared and evaluated practical labs focused on the use of RecyclerView, Sensors, Fragments, and
+              Navigation Component for Android applications with Java.</span></li>
+          <li><span>Guided students throughout the semester by providing technical support for the development of their
+              projects.</span></li>
         </ul>
       </div>
+
     </section>
 
     <section class="projects container">
@@ -97,9 +104,14 @@
       <h2>Projects</h2>
 
       <div class="project-box hidden">
+
+        <div class="project-img">
+          <img src="assets/images/gtics-project.png" alt="Project image" />
+        </div>
+
         <div class="project-textbox">
           <h3>
-            Registration and administration of clinic locations
+            Clinic WebApp
           </h3>
           <p>
             Clinic system for appointment scheduling and
@@ -135,20 +147,21 @@
                             -->
           </div>
         </div>
-        <div class="project-img">
-          <img src="assets/images/gtics-project.png" alt="Project image" />
-        </div>
+
       </div>
 
       <div class="project-box hidden">
+
+        <div class="project-img">
+          <img src="assets/images/iweb-project.png" alt="Project image" />
+        </div>
+
         <div class="project-textbox">
           <h3>
-            Registration and monitoring of incidents on the PUCP
-            campus
+            Incidents Reporting WebApp
           </h3>
           <p>
-            Report incidents that occur on the PUCP campus so
-            that they can be resolved.
+            Reporting and solution system for incidents that occur on the PUCP campus.
           </p>
           <ul class="project-technologies">
             <li>
@@ -184,15 +197,18 @@
                             -->
           </div>
         </div>
-        <div class="project-img">
-          <img src="assets/images/iweb-project.png" alt="Project image" />
-        </div>
+
       </div>
 
       <div class="project-box hidden">
+
+        <div class="project-img">
+          <img src="assets/images/auth-project.png" alt="Project image" />
+        </div>
+
         <div class="project-textbox">
           <h3>
-            Authentication web system with Spring Boot and MySQL
+            Authentication WebApp
           </h3>
           <p>
             Web system that allows the registration and
@@ -214,19 +230,24 @@
               class="btn">Code
               <img src="assets/icons/github.svg" alt="icon-github" />
             </a>
-            <a data-type="live" target="_blank" href="http://noa-web.lat" class="btn">Live
+            <!-- <a data-type="live" target="_blank" href="http://noa-web.lat" class="btn">Live
               <img src="assets/icons/link-solid.svg" alt="icon-link" />
-            </a>
+            </a> -->
           </div>
         </div>
-        <div class="project-img">
-          <img src="assets/images/auth-project.png" alt="Project image" />
-        </div>
+
       </div>
 
       <div class="project-box hidden">
+
+        <div class="project-img">
+          <img src="assets/images/azure-project.png" alt="Project image" />
+        </div>
+
         <div class="project-textbox">
-          <h3>Analize and generate images with Azure AI</h3>
+          <h3>
+            Analyze and Generate Images WebApp
+          </h3>
           <p>
             Analyze images using its URL or generate new ones
             based on text.
@@ -247,20 +268,25 @@
               href="https://github.com/noaJ4Q/analize-and-generate-images-with-Azure-AI.git" class="btn">Code
               <img src="assets/icons/github.svg" alt="icon-github" />
             </a>
-            <a data-type="live" target="_blank" href="https://calm-mud-053b23303.4.azurestaticapps.net/"
+            <!-- <a data-type="live" target="_blank" href="https://calm-mud-053b23303.4.azurestaticapps.net/"
               class="btn">Live
               <img src="assets/icons/link-solid.svg" alt="icon-link" />
-            </a>
+            </a> -->
           </div>
         </div>
-        <div class="project-img">
-          <img src="assets/images/azure-project.png" alt="Project image" />
-        </div>
+
       </div>
 
       <div class="project-box hidden">
+
+        <div class="project-img">
+          <img src="assets/images/to-do-list-app.png" alt="Project image" />
+        </div>
+
         <div class="project-textbox">
-          <h3>To-Do List app</h3>
+          <h3>
+            To-Do List WebApp
+          </h3>
           <p>
             Organize your work and life through this simple to
             do list app.
@@ -274,14 +300,12 @@
             <a data-type="code" target="_blank" href="https://github.com/noaJ4Q/NodeJS-TodoList.git" class="btn">Code
               <img src="assets/icons/github.svg" alt="icon-github" />
             </a>
-            <a data-type="live" target="_blank" href="https://todolist-app-umkz.onrender.com" class="btn">Live
+            <!-- <a data-type="live" target="_blank" href="https://todolist-app-umkz.onrender.com" class="btn">Live
               <img src="assets/icons/link-solid.svg" alt="icon-link" />
-            </a>
+            </a> -->
           </div>
         </div>
-        <div class="project-img">
-          <img src="assets/images/to-do-list-app.png" alt="Project image" />
-        </div>
+
       </div>
 
     </section>

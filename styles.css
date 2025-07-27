@@ -1,5 +1,5 @@
 :root {
-  --container-width: 700px;
+  --container-width: 680px;
   --project-description-width: 55%;
   --btn-height: 2.4rem;
   --responsive-space: 2rem;
@@ -22,7 +22,10 @@
 }
 
 body {
-  background-color: var(--main-color);
+  background: #0e1724;
+  background: linear-gradient(90deg, rgba(14, 23, 36, 1) 0%, rgba(31, 42, 61, 1) 50%, rgba(14, 23, 36, 1) 100%);
+  /* background: #0E1223;
+  background: linear-gradient(90deg, rgba(14, 18, 35, 1) 0%, rgba(26, 30, 61, 1) 50%, rgba(14, 18, 35, 1) 100%); */
 }
 
 p {
@@ -42,16 +45,17 @@ p {
 }
 
 .nav {
-  background-color: #1f2a3aAC;
   backdrop-filter: blur(10px);
   color: var(--text-color-main);
   position: fixed;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
+  width: calc(var(--container-width) + 2rem);
   font-size: 1.1rem;
   z-index: 1;
 }
@@ -64,7 +68,7 @@ p {
 .nav ul {
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .nav li {
@@ -78,6 +82,7 @@ p {
 .header-content {
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .user-profile {
@@ -186,13 +191,18 @@ section h2 {
 
 .experience-description {
   list-style-type: disc;
-  list-style-position: inside;
+  margin-left: 1.1rem;
   color: var(--text-color-sec);
+  font-size: .9rem;
+}
+
+.experience-description li {
+  padding-bottom: .5rem;
 }
 
 .experience-description li span {
   position: relative;
-  left: -8px;
+  left: -4px;
 }
 
 /* PROJECTS */
@@ -205,11 +215,12 @@ section h2 {
 
 .project-textbox {
   width: var(--project-description-width);
-  padding-right: 1rem;
+  padding-left: 2rem;
 }
 
 .project-textbox h3 {
   padding-bottom: .8rem;
+  font-size: 1.2rem;
 }
 
 .project-textbox p {
@@ -272,6 +283,8 @@ section h2 {
   transform: scale(1.05);
 }
 
+/* SKILLS */
+
 .skills-imgs {
   display: flex;
   flex-wrap: wrap;
@@ -296,6 +309,7 @@ section h2 {
   display: flex;
   align-items: center;
   gap: .5rem;
+  margin-bottom: 2rem;
 }
 
 .contact-form input {

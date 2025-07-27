@@ -2,31 +2,51 @@ const data = {
   english: {
     userTitle: 'Hi, I\'m Noe Jara',
     userSubtitle: 'Full-Stack Developer',
-    userDescription: 'A telecommunication engineering student at PUCP with interest ant experience in web development.',
+    userDescription: 'Student passionate about software development.',
     sections: [
+      'Experience',
       'Projects',
       'Skills',
       'Contact'
     ],
+    experiences: [
+      {
+        title: 'Development Intern - Bitel Peru',
+        description: 'May 2024 - Nov 2024',
+        details: [
+          'Developed functionalities on web platforms using Java, Apache Struts, and Hibernate, optimizing the user experience.',
+          'Participated in meetings with the Sales team to identify and resolve bugs in multi-threaded Java processes.',
+          'Maintained effective communication in English with an international team using Jira for task monitoring.'
+        ]
+      },
+      {
+        title: 'Professor Assistant - PUCP',
+        description: 'Mar 2024 - Jul 2024',
+        details: [
+          'Prepared and evaluated practical labs focused on the use of RecyclerView, Sensors, Fragments, and Navigation Component for Android applications with Java.',
+          'Guided students throughout the semester by providing technical support for the development of their projects.'
+        ]
+      },
+    ],
     projects: [
       {
-        title: 'Registration and administration of clinic locations',
-        description: 'Clinic system for appointment scheduling and management of patients, doctors and administrative staff',
+        title: 'Clinic WebApp',
+        description: 'Clinic system for appointment scheduling and managment of clients, doctors and administrators.',
       },
       {
-        title: 'Registration and monitoring of incidents on the PUCP campus',
-        description: 'Reporting and solution system for incidents that occur on the PUCP campus.'
+        title: 'Incidents Reporting WebApp',
+        description: 'Reporting and solution system for incidents that occur within the PUCP campus.'
       },
       {
-        title: 'Authentication web system with Spring Boot and MySQL',
+        title: 'Authentication WebApp',
         description: 'Web system that allows the registration and authentication of users.'
       },
       {
-        title: 'Analize and generate images with Azure AI',
+        title: 'Analyze and Generate Images WebApp',
         description: 'Analyze images using its URL or generate new ones based on text.'
       },
       {
-        title: 'To-Do List app',
+        title: 'To-Do List WebApp',
         description: 'Organize your work and life through this simple to do list app.'
       }
     ],
@@ -42,27 +62,47 @@ const data = {
   spanish: {
     userTitle: 'Hola, soy Noe Jara',
     userSubtitle: 'Desarrollador Full Stack',
-    userDescription: 'Estudiante de Ingeniería de las Telecomunicaciones en la PUCP con interés y experiencia en el desarrollo web.',
+    userDescription: 'Estudiante apasionado por el desarrollo de software.',
     sections: [
+      'Experiencia',
       'Proyectos',
       'Habilidades',
       'Contacto'
     ],
+    experiences: [
+      {
+        title: 'Practicante de Desarrollo - Bitel Perú',
+        description: 'May 2024 - Nov 2024',
+        details: [
+          'Desarrollé funcionalidades en plataformas web utilizando Java, Apache Struts y Hibernate, optimizando la experiencia del usuario.',
+          'Participé en reuniones con el equipo de Ventas para identificar y resolver errores en procesos Java multihilo.',
+          'Mantuve una comunicación efectiva en inglés con un equipo internacional utilizando Jira para el seguimiento de tareas.'
+        ]
+      },
+      {
+        title: 'Instructor - PUCP',
+        description: 'Mar 2024 - Jul 2024',
+        details: [
+          'Preparé y evalué laboratorios prácticos enfocados en el uso de RecyclerView, Sensores, Fragmentos y Navigation Component para aplicaciones Android con Java.',
+          'Guié a los estudiantes durante todo el semestre brindando soporte técnico para el desarrollo de sus proyectos.'
+        ]
+      },
+    ],
     projects: [
       {
-        title: 'Registro y administración de las sedes de una clínica',
+        title: 'Aplicación web clínica',
         description: 'Sistema clínico para la programación de citas y gestión de pacientes, médicos y personal administrativo.',
       },
       {
-        title: 'Registro y monitoreo de incidentes en el campus PUCP',
+        title: 'Aplicación de reporte de incidentes',
         description: 'Sistema de reporte y solución de incidentes ocurridos en el campus PUCP.'
       },
       {
-        title: 'Sistema web de autenticación con Spring Boot y MySQL',
+        title: 'Aplicación de autenticación',
         description: 'Sistema web que permite el registro y autenticación de usuarios.'
       },
       {
-        title: 'Analize and generate images with Azure AI',
+        title: 'Aplicación de análisis y generación de imágenes',
         description: 'Analiza imágenes usando su URL o genera nuevas basadas en texto.'
       },
       {
@@ -87,6 +127,7 @@ const userSubtitle = document.getElementById('user-subtitle');
 const userDescription = document.getElementById('user-description');
 const sections = document.querySelectorAll('section > h2');
 const projects = document.querySelectorAll('.project-textbox');
+const experiences = document.querySelectorAll('.experience-box');
 const buttons = document.querySelectorAll('.btn');
 const contactMsg = document.querySelector('label[for=message]');
 
@@ -121,6 +162,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
+
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((element) => observer.observe(element));
 
@@ -141,9 +183,11 @@ angle.onclick = () => {
 
 window.onscroll = () => {
   if (window.scrollY > 0) {
-    angle.style.display = 'none';
+    angle.classList.add('hidden');
+    // angle.style.display = 'none';
   } else {
-    angle.style.display = 'block';
+    angle.classList.remove('hidden');
+    // angle.style.display = 'block';
   }
 }
 
@@ -161,6 +205,13 @@ langBtn.onclick = () => {
     // sections
     sections.forEach((section, index) => {
       section.innerText = data.spanish.sections[index];
+    });
+
+    // experiences
+    experiences.forEach((experience, index) => {
+      experience.querySelector('h3').innerText = data.spanish.experiences[index].title; // change title
+      experience.querySelector('p').innerText = data.spanish.experiences[index].description; // change description
+
     });
 
     // projects
@@ -194,6 +245,13 @@ langBtn.onclick = () => {
     sections.forEach((section, index) => {
       section.innerText = data.english.sections[index];
     });
+
+    // experiences
+    experiences.forEach((experience, index) => {
+      experience.querySelector('h3').innerText = data.english.experiences[index].title; // change title
+      experience.querySelector('p').innerText = data.english.experiences[index].description; // change description
+
+    })
 
     // projects
     projects.forEach((project, index) => {
